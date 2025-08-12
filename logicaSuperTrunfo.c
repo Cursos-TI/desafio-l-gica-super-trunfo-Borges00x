@@ -27,8 +27,7 @@ int main () {
     float densidade2, pibPerCapita2;
     float superpoder2 = 0;
 
-    int populacaoresult, arearesult, pibresult, turisticosresult, 
-    densidaderesult, pibperresult, poderresult, resultado, carta = 2, erro = 1;  
+    int resultado, carta = 2, erro = 1;  
     
     int atributo = 0, atributo2 = 0;
 
@@ -146,11 +145,11 @@ int main () {
     switch (atributo) {
 
     case 1:
-            printf("Carta 1 - Nome: %s (%s), Atributo: População. quantidade %ld. \n", cidade, estado, populacao);
-            printf("Carta 2 - Nome: %s (%s), Atributo: População. quantidade %ld. \n", cidade2, estado2, populacao2);
-        if (populacaoresult = populacao > populacao2) {
+            printf("Carta 1 - Nome: %s (%s), Atributo: População. quantidade %lu. \n", cidade, estado, populacao);
+            printf("Carta 2 - Nome: %s (%s), Atributo: População. quantidade %lu. \n", cidade2, estado2, populacao2);
+        if (populacao > populacao2) {
             printf("Resultado: Carta 1 (%s) Venceu! \n", cidade);
-        } else if (populacaoresult = populacao < populacao2) {
+        } else if (populacao < populacao2) {
             printf("Resultado: Carta 2 (%s) Venceu! \n", cidade2);
         } else {
             printf("Houve empate!");
@@ -161,9 +160,9 @@ int main () {
     case 2:
             printf("Carta 1 - Nome: %s (%s), Atributo: Área. valor: %.2f km² \n", cidade, estado, area);
             printf("Carta 2 - Nome: %s (%s), Atributo: Área. valor: %.2f km² \n", cidade2, estado2, area2);
-        if (arearesult = area > area2) {
+        if (area > area2) {
             printf("Resultado: Carta 1 (%s) Venceu! \n", cidade);
-        } else if (arearesult = area < area2) {
+        } else if (area < area2) {
             printf("Resultado: Carta 2 (%s) Venceu! \n", cidade2);
         } else {
             printf("Houve empate!\n");
@@ -174,9 +173,9 @@ int main () {
     case 3:
             printf("Carta 1 - Nome: %s (%s), Atributo: PIB. valor: R$ %.2f Bilhões \n", cidade, estado, pib);
             printf("Carta 2 - Nome: %s (%s), Atributo: PIB. valor: R$ %.2f Bilhões \n", cidade2, estado2, pib2);
-        if (pibresult = pib > pib2) {
+        if (pib > pib2) {
             printf("Resultado: Carta 1 (%s) Venceu! \n", cidade);
-        } else if (pibresult = pib < pib2) {
+        } else if (pib < pib2) {
             printf("Resultado: Carta 2 (%s) Venceu! \n", cidade2);
         } else {
             printf("Houve empate!\n");
@@ -187,9 +186,9 @@ int main () {
     case 4:
             printf("Carta 1 - Nome: %s (%s), Atributo: Pontos Turísticos. quantidade %d \n", cidade, estado, pontosturisticos);
             printf("Carta 2 - Nome: %s (%s), Atributo: Pontos Turísticos. quantidade %d \n", cidade2, estado2, pontosturisticos2);
-        if (turisticosresult = pontosturisticos > pontosturisticos2) {
+        if (pontosturisticos > pontosturisticos2) {
             printf("Resultado: Carta 1 (%s) Venceu! \n", cidade);
-        } else if (turisticosresult = pontosturisticos < pontosturisticos2) {
+        } else if (pontosturisticos < pontosturisticos2) {
             printf("Resultado: Carta 2 (%s) Venceu! \n", cidade2);
         } else {
             printf("Houve empate!\n");
@@ -200,9 +199,9 @@ int main () {
     case 5:
             printf("Carta 1 - Nome: %s (%s), Atributo: Densidade populacional %.2f hab/km² \n", cidade, estado, densidade);
             printf("Carta 2 - Nome: %s (%s), Atributo: Densidade populacional %.2f hab/km² \n", cidade2, estado2, densidade2);
-        if (densidaderesult = densidade < densidade2) {
+        if (densidade < densidade2) {
             printf("Resultado: Carta 1 (%s) Venceu! \n", cidade);
-        } else if (densidaderesult = densidade > densidade2) {
+        } else if (densidade > densidade2) {
             printf("Resultado: Carta 2 (%s) Venceu! \n", cidade2);
         } else {
             printf("Houve empate!\n");
@@ -235,11 +234,11 @@ int main () {
             switch (atributo2) {
 
             case 1:
-                printf("Carta 1 - Nome: %s (%s), Atributo: População. quantidade %ld. \n", cidade, estado, populacao);
-                printf("Carta 2 - Nome: %s (%s), Atributo: População. quantidade %ld. \n", cidade2, estado2, populacao2);
-            if (populacaoresult = populacao > populacao2) {
+                printf("Carta 1 - Nome: %s (%s), Atributo: População. quantidade %lu. \n", cidade, estado, populacao);
+                printf("Carta 2 - Nome: %s (%s), Atributo: População. quantidade %lu. \n", cidade2, estado2, populacao2);
+            if (populacao > populacao2) {
                 printf("Resultado: Carta 1 (%s) Venceu! \n", cidade);
-            } else if (populacaoresult = populacao < populacao2) {
+            } else if (populacao < populacao2) {
                 printf("Resultado: Carta 2 (%s) Venceu! \n", cidade2);
             } else {
                 printf("Houve empate!\n");
@@ -251,9 +250,9 @@ int main () {
             case 2:
                 printf("Carta 1 - Nome: %s (%s), Atributo: Área. valor: %.2f km² \n", cidade, estado, area);
                 printf("Carta 2 - Nome: %s (%s), Atributo: Área. valor: %.2f km² \n", cidade2, estado2, area2);
-            if (arearesult = area > area2) {
+            if (area > area2) {
                 printf("Resultado: Carta 1 (%s) Venceu! \n", cidade);
-            } else if (arearesult = area < area2) {
+            } else if (area < area2) {
                 printf("Resultado: Carta 2 (%s) Venceu! \n", cidade2);
             } else {
                 printf("Houve empate!\n");
@@ -265,9 +264,9 @@ int main () {
             case 3:
                 printf("Carta 1 - Nome: %s (%s), Atributo: PIB. valor: R$ %.2f Bilhões \n", cidade, estado, pib);
                 printf("Carta 2 - Nome: %s (%s), Atributo: PIB. valor: R$ %.2f Bilhões \n", cidade2, estado2, pib2);
-            if (pibresult = pib > pib2) {
+            if (pib > pib2) {
                 printf("Resultado: Carta 1 (%s) Venceu! \n", cidade);
-            } else if (pibresult = pib < pib2) {
+            } else if (pib < pib2) {
                 printf("Resultado: Carta 2 (%s) Venceu! \n", cidade2);
             } else {
                 printf("Houve empate!\n");
@@ -279,9 +278,9 @@ int main () {
             case 4:
                 printf("Carta 1 - Nome: %s (%s), Atributo: Pontos Turísticos. quantidade %d \n", cidade, estado, pontosturisticos);
                 printf("Carta 2 - Nome: %s (%s), Atributo: Pontos Turísticos. quantidade %d \n", cidade2, estado2, pontosturisticos2);
-            if (turisticosresult = pontosturisticos > pontosturisticos2) {
+            if (pontosturisticos > pontosturisticos2) {
                 printf("Resultado: Carta 1 (%s) Venceu! \n", cidade);
-            } else if (turisticosresult = pontosturisticos < pontosturisticos2) {
+            } else if (pontosturisticos < pontosturisticos2) {
                 printf("Resultado: Carta 2 (%s) Venceu! \n", cidade2);
             } else {
                 printf("Houve empate!\n");
@@ -293,9 +292,9 @@ int main () {
             case 5:
                 printf("Carta 1 - Nome: %s (%s), Atributo: Densidade populacional %.2f hab/km² \n", cidade, estado, densidade);
                 printf("Carta 2 - Nome: %s (%s), Atributo: Densidade populacional %.2f hab/km² \n", cidade2, estado2, densidade2);
-            if (densidaderesult = densidade < densidade2) {
+            if (densidade < densidade2) {
                 printf("Resultado: Carta 1 (%s) Venceu! \n", cidade);
-            } else if (densidaderesult = densidade > densidade2) {
+            } else if (densidade > densidade2) {
                 printf("Resultado: Carta 2 (%s) Venceu! \n", cidade2);
             } else {
                 printf("Houve empate!\n");
